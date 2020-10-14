@@ -15,11 +15,32 @@ body {
   margin: 0;
 }
 
-grid-container {
+.artist {
+  grid-area: artist;
+}
+
+.h1 {
+  grid-area: h1;
+}
+
+.yellowsquare {
+  grid-area: yellowsquare;
+}
+
+.date {
+  grid-area: date;
+}
+
+.secondtitle {
+  grid-area: secondtitle;
+}
+
+.gridcontainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "artist h1 h1" ". yellow-square date" "second-title second-title second-title";
+  grid-template-areas: "artist h1 h1" ". yellowsquare date" "secondtitle secondtitle secondtitle";
 }
 
 h1 {
