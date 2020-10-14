@@ -19,8 +19,13 @@ body {
     grid-area: artist;
 }
 
-.h1 {
-    grid-area: h1;
+.firsttitle {
+    grid-area: firsttitle;
+    text-transform: uppercase;
+    font-size: 200px;
+    margin: 0;
+    line-height: 150px;
+    text-align: right;
 }
 
 .yellowsquare {
@@ -36,25 +41,19 @@ body {
 
 }
 
+.yellowsquare {
+    background-color: yellow;
+}
+
 .gridcontainer {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-        'artist h1 h1'
+        'artist firsttitle firsttitle'
         '. yellowsquare date'
         'secondtitle secondtitle secondtitle'
-
-}
-
-
-h1 {
-    text-transform: uppercase;
-    font-size: 100px;
-    line-height: 75px;
-    margin: 0 -48% 0 0;
-    text-align: right;
 
 }
 
