@@ -17,6 +17,13 @@ body {
 
 .artist {
   grid-area: artist;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  transform: rotate(-90deg);
+  margin: 0;
+  justify-self: end;
+  align-self: center;
 }
 
 .firsttitle {
