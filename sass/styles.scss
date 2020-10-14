@@ -31,14 +31,19 @@ body {
 
 .yellowsquare {
     grid-area: yellowsquare;
+    background-color: #DFDA27;
 }
 
 .date {
     grid-area: date;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     transform: rotate(-90deg);
+    text-align: right;
     justify-self: flex-end;
-    align-self: end ;
-    margin: 5;
+    align-self: end;
+    margin: 5%;
 }
 
 .secondtitle {
@@ -49,10 +54,6 @@ body {
     font-size: 200px;
     margin: 0 0 0 -75%;
     line-height: 145px;
-}
-
-.yellowsquare {
-    background-color: yellow;
 }
 
 .gridcontainer {
