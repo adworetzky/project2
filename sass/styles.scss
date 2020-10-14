@@ -30,20 +30,22 @@ body {
     grid-area: firsttitle;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    letter-spacing: -10px;
     text-transform: uppercase;
     font-size: 200px;
     margin: 0;
     line-height: 145px;
 }
-.smalltitle{
+
+.smalltitle {
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     transform: rotate(-90deg);
     text-align: right;
-    justify-self: flex-end;
-    align-self: end;
-    margin: 5%;
+    justify-self: end;
+    align-self: center;
+
 }
 
 .yellowsquare {
@@ -80,7 +82,7 @@ body {
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
         'artist firsttitle firsttitle'
-        '. yellowsquare date'
+        'smalltitle yellowsquare date'
         'secondtitle secondtitle secondtitle'
 
 }
