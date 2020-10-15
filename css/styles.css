@@ -81,3 +81,36 @@ body {
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "artist firsttitle firsttitle" "smalltitle yellowsquare date" "secondtitle secondtitle secondtitle";
 }
+
+@media (min-width: 600px) {
+  .gridcontainer {
+    height: 700px;
+  }
+
+  .firsttitle {
+    align-self: flex-end;
+    font-size: 250px;
+    line-height: 180px;
+  }
+
+  .secondtitle {
+    font-size: 250px;
+    line-height: 180px;
+  }
+}
+@media (min-width: 900px) {
+  .gridcontainer {
+    height: 800px;
+  }
+
+  .firsttitle {
+    align-self: flex-end;
+    font-size: 300px;
+    line-height: 230px;
+  }
+
+  .secondtitle {
+    font-size: 250px;
+    line-height: 180px;
+  }
+}
