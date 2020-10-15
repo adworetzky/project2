@@ -111,6 +111,11 @@ body {
 
   .secondtitle {
     font-size: 300px;
-    line-height: 218px;
+    line-height: 225px;
+  }
+}
+@media (min-width: 1280px) {
+  .secondtitle {
+    margin: 0 0 0 -50%;
   }
 }
