@@ -1,1 +1,121 @@
+.u-clearfix::before,
+.u-clearfix::after {
+  content: " ";
+  display: table;
+}
 
+.u-clearfix::after {
+  clear: both;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  transition: 2s;
+}
+
+.artist {
+  grid-area: artist;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  transform: rotate(-90deg);
+  margin: 0;
+  justify-self: center;
+  align-self: flex-end;
+}
+
+.firsttitle {
+  grid-area: firsttitle;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: -10px;
+  text-transform: uppercase;
+  font-size: 200px;
+  margin: 0;
+  line-height: 145px;
+}
+
+.smalltitle {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  transform: rotate(-90deg);
+  justify-self: center;
+  align-self: center;
+}
+
+.yellowsquare {
+  grid-area: yellowsquare;
+  background-color: #DFDA27;
+}
+
+.date {
+  grid-area: date;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  transform: rotate(-90deg);
+  text-align: right;
+  justify-self: flex-end;
+  align-self: end;
+  margin: 5%;
+}
+
+.secondtitle {
+  grid-area: secondtitle;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 200px;
+  margin: 0 0 0 -75%;
+  line-height: 145px;
+}
+
+.gridcontainer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "artist firsttitle firsttitle" "smalltitle yellowsquare date" "secondtitle secondtitle secondtitle";
+}
+
+@media (min-width: 600px) {
+  .gridcontainer {
+    height: 700px;
+  }
+
+  .firsttitle {
+    align-self: flex-end;
+    font-size: 250px;
+    line-height: 180px;
+  }
+
+  .secondtitle {
+    font-size: 250px;
+    line-height: 180px;
+  }
+}
+@media (min-width: 900px) {
+  .gridcontainer {
+    height: 800px;
+  }
+
+  .firsttitle {
+    align-self: flex-end;
+    font-size: 300px;
+    line-height: 218px;
+  }
+
+  .secondtitle {
+    font-size: 300px;
+    line-height: 225px;
+  }
+}
+@media (min-width: 1280px) {
+  .secondtitle {
+    margin: 0 0 0 -50%;
+  }
+}
